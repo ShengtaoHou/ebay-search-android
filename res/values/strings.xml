@@ -1,0 +1,79 @@
+<resources>
+    <string name="app_name">Product Search</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <string name="keyword_label">Keyword</string>
+    <string name="keyword_hint">Enter Keyword</string>
+    <string name="keyword_error">Please enter mandatory field</string>
+    <string name="category_label">Category</string>
+
+    <string name="condition_label">Condition</string>
+    <string name="new_label">New</string>
+    <string name="used_label">Used</string>
+    <string name="unspec_label">Unspecified</string>
+
+    <string name="shipping_label">Shipping Options</string>
+    <string name="pickup_label">Local Pickup</string>
+    <string name="free_label">Free</string>
+
+    <string name="nearby_label">Enable Nearby Search</string>
+    <string name="distance_hint">Miles from</string>
+    <string name="from_label">From</string>
+    <string name="current_label">Current Location</string>
+    <string name="zipcode_hint">zipcode</string>
+    <string name="search_button">Search</string>
+    <string name="clear_button">Clear</string>
+
+    <string name="product_highlight">Highlights</string>
+    <string name="product_subtitile_label">Subtitle</string>
+    <string name="product_price_label">Price</string>
+    <string name="product_brand_label">Brand</string>
+    <string name="product_specification_label">Specification</string>
+
+    <string name="soldby_label">Sold By</string>
+    <string name="store_label">Store Name</string>
+    <string name="feedback_score_label">Feedback Score</string>
+    <string name="popularity_label">Popularity</string>
+    <string name="feedback_star_label">Feedback Star</string>
+
+    <string name="shipping_info_label">Shipping Info</string>
+    <string name="shipping_cost_label">Shipping Cost</string>
+    <string name="gloabal_label">Global Shipping</string>
+    <string name="handling_label">Handling Time</string>
+    <string name="contidion_label">Condition</string>
+
+    <string name="return_policy_label">Return Policy</string>
+    <string name="policy_label">Policy</string>
+    <string name="return_within_label">Return within</string>
+    <string name="return_mode_label">Return Mode</string>
+    <string name="shipped_by_label">Shipped by</string>
+
+    <string name="wish_num">Wishlist total(0 item):</string>
+    <string name="wish_price">$0.0</string>
+    <string name="facebook_app_id">258246515127309</string>
+    <string-array name="category_array">
+        <item>All</item>
+        <item>Art</item>
+        <item>Baby</item>
+        <item>Books</item>
+        <item>Clothing,Shoes &amp; Accessories</item>
+        <item>Computers/Tablets &amp; Networking</item>
+        <item>Health &amp; Beauty</item>
+        <item>Music</item>
+        <item>Video Games &amp; Consoles</item>
+    </string-array>
+
+    <string-array name="sortby_array">
+        <item>Default</item>
+        <item>Name</item>
+        <item>Price</item>
+        <item>Days</item>
+    </string-array>
+
+    <string-array name="order_array">
+        <item>Ascending</item>
+        <item>Descending</item>
+    </string-array>
+
+</resources>

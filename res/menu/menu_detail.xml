@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.hst.ps2.detail.DetailPage">
+    <item
+        android:id="@+id/facebook_share"
+        android:orderInCategory="100"
+        android:title="share facebook"
+        android:icon="@drawable/facebook"
+        app:showAsAction="always" />
+</menu>

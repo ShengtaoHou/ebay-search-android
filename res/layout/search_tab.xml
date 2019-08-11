@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/keyword_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:text="@string/keyword_label" />
+
+
+    <EditText
+        android:id="@+id/keyword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/keyword_hint"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/keyword_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:textColor="@color/colorError"
+        android:text="@string/keyword_error" />
+
+    <TextView
+        android:id="@+id/category_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/category_label" />
+
+    <Spinner
+        android:id="@+id/spinner_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/category_array" />
+
+    <TextView
+        android:id="@+id/condition_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/condition_label" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/New"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/new_label" />
+
+        <CheckBox
+            android:id="@+id/used"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/used_label" />
+
+        <CheckBox
+            android:id="@+id/unspec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/unspec_label" />
+
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/shipping_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/shipping_label" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <CheckBox
+            android:id="@+id/pickup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/pickup_label" />
+
+        <CheckBox
+            android:id="@+id/free"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="@string/free_label" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/nearby_label"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/nearby_label"
+            android:gravity="center"/>
+
+        <CheckBox
+            android:id="@+id/nearby_enable"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:text="" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/nearby_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/distance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/distance_hint"
+            android:inputType="textPersonName"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/from_label"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/from_label"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal">
+            <RadioGroup
+                android:id="@+id/m_radio_group"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" >
+                <RadioButton
+                    android:id="@+id/radio_current"
+                    android:checked="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+
+                    android:text="" />
+                <RadioButton
+                    android:id="@+id/radio_zipcode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="80dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/current_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="4dp"
+                    android:text="@string/current_label"
+                    android:gravity="center"/>
+            <!--<EditText-->
+                <!--android:id="@+id/zipcode"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:ems="10"-->
+                <!--android:hint="@string/zipcode_hint"-->
+                <!--android:inputType="textPersonName"-->
+                <!--android:text="" />-->
+
+                <AutoCompleteTextView
+                    android:id="@+id/zipcode"
+                    android:focusable="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/zipcode_hint"
+                    android:text="" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/zipcode_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:textColor="@color/colorError"
+        android:text="@string/keyword_error" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <Button
+            android:id="@+id/search_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorOrange"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp"
+            android:text="@string/search_button" />
+
+        <Button
+            android:id="@+id/clear_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorOrange"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:text="@string/clear_button" />
+    </LinearLayout>
+
+
+</LinearLayout>
